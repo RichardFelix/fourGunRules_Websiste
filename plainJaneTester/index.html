@@ -3,14 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>webpack</title>
+    <title>Four Gun Rules</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet">
     <style>
-    img{ width: 100%; height: 300px; border-top-left-radius: 3%; border-top-right-radius: 3%;}
+      body{
+        font-family: 'Roboto', sans-serif;
+      }
       section{
         margin: 2% 10%;
       }
       header{
         font-style: italic;
+        font-weight: 300;
+      }
+      img{
+        width: 100%;
+        height: 300px;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+      }
+      .title{
+        font-weight: 400;
       }
       summary{
         border: solid 1px #000;
@@ -44,6 +57,7 @@
         background-color: lightblue;
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.39);
         border: none;
+        cursor: pointer;
       }
       .center{
         text-align: center;
@@ -56,6 +70,7 @@
       }
       .italic{
         font-style: italic;
+        font-weight: 300;
       }
       .link{
         color: lightblue;
@@ -63,6 +78,16 @@
       @media (max-width: 768px){
         section{
           margin: 2% 0;
+        }
+      }
+      @media (min-width: 768px){
+        .rule{
+          text-align: center;
+        }
+      }
+      @media (min-width: 1000px){
+        section{
+          margin: 2% 20%;
         }
       }
     </style>
@@ -80,9 +105,9 @@
         </div>
       </header>
       <summary>
-        <img src='./src/img/road.jpg' alt='road'/>
+        <img src='./img/road.jpg' alt='road'/>
         <p class='rules margin5px'>
-          <h3 class='center margin5px'>THE FOUR RULES</h3>
+          <h3 class='title center margin5px'>THE FOUR RULES</h3>
           <div class='rule'>
             1. <span class='bold'>G</span><span class='italic'>uns should ALWAYS be treated as if they are loaded. (Even when they are not!)</span>
           </div>
@@ -143,9 +168,8 @@
             <a class='link' href="https://www.cowitness.com" target="_blank">www.cowitness.com</a>
           </span>
         </div>
-        <button class='learnBtn'>Learn More</button>
+        <button class='learnBtn' onclick="location.href = 'https://www.cowitness.com';">Learn More</button>
       </footer>
     </section>
-    <script src='./build/bundle.js'></script>
   </body>
 </html>
