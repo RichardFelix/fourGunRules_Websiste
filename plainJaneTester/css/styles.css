@@ -1,9 +1,14 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
-section{
+/*section{
   margin: 2% 10%;
+}*/
+#container{
+  display: flex;
+  flex-direction: row;
 }
+aside{}
 header{
   font-style: italic;
   font-weight: 300;
@@ -28,6 +33,9 @@ summary{
 .rule{
   margin-left: 10px;
   margin-bottom: 5px;
+}
+.ruleContainer{
+
 }
 .ruleDesc{
   margin: 10px 0;
@@ -69,8 +77,15 @@ footer{
   color: lightblue;
 }
 @media (max-width: 768px){
-  section{
-    margin: 2% 0;
+  aside{
+    display: none;
+  }
+  .mobileAd{
+    display: block;
+    background-color: red;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 768px){
@@ -79,7 +94,9 @@ footer{
   }
 }
 @media (min-width: 1000px){
-  section{
-    margin: 2% 20%;
+  aside{
+    flex-basis: 45%;
+    background-color: red;
+    margin: 0px 20px;
   }
 }
