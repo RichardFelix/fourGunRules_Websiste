@@ -80,6 +80,8 @@ footer{
   aside{
     display: none;
   }
+}
+@media (max-width: 1000px){
   .mobileAd{
     display: block;
     background-color: red;
