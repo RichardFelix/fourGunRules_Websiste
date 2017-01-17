@@ -1,5 +1,7 @@
 body{
   font-family: 'Roboto', sans-serif;
+  line-height: 1.7em;
+  font-size: 1.2em;
 }
 section{
   margin: 2% 10%;
@@ -20,6 +22,7 @@ img{
 summary{
   border: solid 1px #000;
   border-radius: 3%;
+
 }
 .note{
   margin-bottom: 50px;
@@ -72,6 +75,9 @@ footer{
 @media (max-width: 768px){
   section{
     margin: 2% 0;
+  }
+  img{
+    height: 250px;
   }
 }
 @media (min-width: 768px){
