@@ -2,11 +2,10 @@
 
 ## Summary
 
-Four Gun Rules Website for the infomational websites
+Four Gun Rules Website for the informational websites
 
 ### Tools and Technology used
 
 * JavaScript
 * Sass
 * HTML
-* Webpack
