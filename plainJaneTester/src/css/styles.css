@@ -48,7 +48,7 @@ footer{
 }
 .learnBtn{
   align-self: center;
-  background-color: lightblue;
+  background-color: navy;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.39);
   border: none;
   cursor: pointer;
@@ -70,7 +70,7 @@ footer{
   font-weight: 300;
 }
 .link{
-  color: lightblue;
+  color: navy;
 }
 @media (max-width: 768px){
   section{
